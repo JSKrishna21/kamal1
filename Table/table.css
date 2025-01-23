@@ -1,0 +1,138 @@
+.container {
+    width: 90%;
+    margin: 20px auto;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.add-item {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+    margin: 20px 20px 15px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h4{
+    margin: 13px auto;
+    font-size: 20px;
+}
+
+.form-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.search-section{
+    display: flex;
+
+}
+
+input {
+    padding: 6px;
+    margin: 5px 18px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.add-button {
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 30px;
+    margin: 5px;
+    margin-left: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.add-button:hover {
+    opacity: 0.7;
+}
+
+.button-edit {
+    background-color: lightgreen;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+.button-delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+.button-edit:hover, .button-delete:hover {
+    opacity: 0.5; 
+}
+  
+
+#search{
+    width: 100%;
+    outline: none;
+    padding: 5px 20px;
+    font-size: small;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead th {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: none;    
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.error-msg {
+    color: red;
+    font-size: 10px;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+i{
+    color: lightcyan;
+}

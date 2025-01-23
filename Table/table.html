@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table JS</title>
+      <link rel="stylesheet" href="table.css">
+      <script src="table.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Custom Table</h1>
+
+        <!-- Add Item Section -->
+        <div class="add-item">
+            <h4>Add Item </h4>
+            <div class="form-section">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Enter Name">
+                    <span id="name-error" class="error-msg" ></span>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="category" placeholder="Enter Category">
+                    <span id="category-error" class="error-msg" ></span>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="year" placeholder="Enter Year" onkeyup="validYearFun()">
+                    <span id="year-error" class="error-msg" ></span>                    
+                </div>
+                <div class="input-group">
+                    <button class="add-button" onclick="addItem()">Add Item</button>
+                    <span id="error" class="error-msg" ></span>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Search Section -->
+        
+        <div class="search">
+            <h4>Search for Item...</h4>
+            <div class="search-section">
+                <input type="text" id="search" placeholder="Search for names..." onkeyup="searchFun()">
+            </div>
+        </div>
+        
+
+        <!-- Table Section -->
+        <table>
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th onclick="sortName()" id="name-header">Name <i id="name-icon" class="fa fa-sort" ></i></th>
+                    <th onclick="sortCategory()" id="category-header">Category <i id="category-icon" class="fa fa-sort"></i></th>
+                    <th onclick="sortYear()" id="year-header">Year <i id="year-icon" class="fa fa-sort"></i></th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Table Rows Will Be Dynamically Added Here -->
+            </tbody>
+        </table>
+    </div>
+
+    
+</body>
+</html>
